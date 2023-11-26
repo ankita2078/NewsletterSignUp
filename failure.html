@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failure</title>
+    <!-- <link rel="stylesheet" href="public/failure.css"> -->
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.441);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 700px;
+        }
+
+        .failure-heading {
+            color: #fff;
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            background-image: url("https://digitalsynopsis.com/wp-content/uploads/2016/12/http-status-codes-dogs.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        button {
+            margin: 10px;
+            padding: 5px;
+            background-color: rgb(240, 240, 121);
+            color: black;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgb(63, 8, 8);
+            color: rgb(249, 247, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="failure-heading">Error!</h1>
+        <div class="image-container"></div>
+        <form action="/failure" method="POST">
+            <button type="submit"><strong>Try Again</strong></button>
+        </form>
+    </div>
+</body>
+
+</html>
